@@ -28,6 +28,20 @@ gcc -o major major.c clz.c endian.c rotate.c parity.c
 
 ---
 
+## rec01-ascii-bits-bytes — ASCII Character Representation in C
+
+Converts a single printable ASCII character into its decimal, hexadecimal, and 8-bit binary
+representation using bitwise operations. Binary output is produced via right shifts and a
+bitmask (`& 1`) from bit 7 down to bit 0.
+
+**Compile and run:**
+```bash
+gcc -o rec01 rec01.c
+./rec01
+```
+
+---
+
 ## minor03-producer-consumer — POSIX Threads
 
 A bounded buffer implemented with POSIX threads: one producer reads characters from stdin,
